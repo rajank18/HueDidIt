@@ -1,0 +1,43 @@
+<svg width="100%" viewBox="0 0 680 520" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF0080"/>
+      <stop offset="25%" stop-color="#FF6B00"/>
+      <stop offset="50%" stop-color="#FFD700"/>
+      <stop offset="75%" stop-color="#00E676"/>
+      <stop offset="100%" stop-color="#00BFFF"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="100%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#7B2FFF"/>
+      <stop offset="100%" stop-color="#FF0080"/>
+    </linearGradient>
+    <radialGradient id="gfill" cx="55%" cy="60%" r="70%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="20%" stop-color="#FF6B00"/>
+      <stop offset="40%" stop-color="#FF0080"/>
+      <stop offset="60%" stop-color="#7B2FFF"/>
+      <stop offset="80%" stop-color="#00BFFF"/>
+      <stop offset="100%" stop-color="#00E676"/>
+    </radialGradient>
+    <linearGradient id="gmesh" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7B2FFF"/>
+      <stop offset="18%" stop-color="#00BFFF"/>
+      <stop offset="36%" stop-color="#00E676"/>
+      <stop offset="54%" stop-color="#FFD700"/>
+      <stop offset="72%" stop-color="#FF6B00"/>
+      <stop offset="100%" stop-color="#FF0080"/>
+    </linearGradient>
+    <clipPath id="tri">
+      <polygon points="340,80 140,400 540,400"/>
+    </clipPath>
+  </defs>
+
+  <!-- triangle base gradient fill -->
+  <polygon points="340,80 140,400 540,400" fill="url(#gmesh)" style="stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- second gradient layer blended for richness -->
+  <polygon points="340,80 140,400 540,400" fill="url(#gfill)" opacity="0.55" style="stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.55;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- crisp edge -->
+  <polygon points="340,80 140,400 540,400" fill="none" stroke="white" stroke-width="1.5" stroke-opacity="0.3" stroke-linejoin="round" style="fill:none;stroke:rgb(255, 255, 255);color:rgb(255, 255, 255);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:round;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="max-height: 500px" viewBox="139.25 79.25 401.5 321.5">
+	<defs>
+		<linearGradient y2="0%" x2="100%" y1="100%" x1="0%" id="g1">
+			<stop stop-color="#FF0080" offset="0%"/>
+			<stop stop-color="#FF6B00" offset="25%"/>
+			<stop stop-color="#FFD700" offset="50%"/>
+			<stop stop-color="#00E676" offset="75%"/>
+			<stop stop-color="#00BFFF" offset="100%"/>
+		</linearGradient>
+		<linearGradient y2="0%" x2="0%" y1="100%" x1="100%" id="g2">
+			<stop stop-color="#7B2FFF" offset="0%"/>
+			<stop stop-color="#FF0080" offset="100%"/>
+		</linearGradient>
+		<radialGradient r="70%" cy="60%" cx="55%" id="gfill">
+			<stop stop-color="#FFD700" offset="0%"/>
+			<stop stop-color="#FF6B00" offset="20%"/>
+			<stop stop-color="#FF0080" offset="40%"/>
+			<stop stop-color="#7B2FFF" offset="60%"/>
+			<stop stop-color="#00BFFF" offset="80%"/>
+			<stop stop-color="#00E676" offset="100%"/>
+		</radialGradient>
+		<linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="gmesh">
+			<stop stop-color="#7B2FFF" offset="0%"/>
+			<stop stop-color="#00BFFF" offset="18%"/>
+			<stop stop-color="#00E676" offset="36%"/>
+			<stop stop-color="#FFD700" offset="54%"/>
+			<stop stop-color="#FF6B00" offset="72%"/>
+			<stop stop-color="#FF0080" offset="100%"/>
+		</linearGradient>
+		<clipPath id="tri">
+			<polygon points="340,80 140,400 540,400"/>
+		</clipPath>
+	</defs>
+
+	<polygon style="stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto" fill="url(#gmesh)" points="340,80 140,400 540,400"/>
+	<polygon style="stroke:none;color:rgb(255, 255, 255);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.55;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto" opacity="0.55" fill="url(#gfill)" points="340,80 140,400 540,400"/>
+	<polygon style="fill:none;stroke:rgb(255, 255, 255);color:rgb(255, 255, 255);stroke-width:1.5px;stroke-linecap:butt;stroke-linejoin:round;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto" stroke-linejoin="round" stroke-opacity="0.3" stroke-width="1.5" stroke="white" fill="none" points="340,80 140,400 540,400"/>
+</svg>
