@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://huedidit.vercel.app/sitemap.xml
