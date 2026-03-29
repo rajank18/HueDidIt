@@ -18,7 +18,7 @@ function StartPhase({ onStart }) {
         <p className="phase-label">READY?</p>
         <h1 className="start-title">A tiny color ritual</h1>
         <p className="start-copy">
-          Breathe, memorize the hue, then recreate it from feel.
+          Memorize the color. Recreate it. Simple... maybe.
         </p>
 
       <motion.button

@@ -7,6 +7,7 @@ function MatchPhase({
   onGuessChange,
   onComplete,
   roundId,
+  durationMs,
 }) {
   const guessCss = `hsla(${guessColor.h} ${guessColor.s}% 50% / ${guessColor.a}%)`
 
@@ -27,7 +28,7 @@ function MatchPhase({
       <div className="phase-header">
         <p className="phase-label">MATCH IT</p>
         <CountdownText
-          durationMs={10000}
+          durationMs={durationMs}
           onComplete={onComplete}
           resetKey={`match-${roundId}`}
           className="timer-chip"

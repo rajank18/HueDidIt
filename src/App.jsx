@@ -22,6 +22,7 @@ function App() {
   } = useGameState()
 
   const gameNumber = Math.max(1, roundId)
+  const matchDurationMs = gameNumber > 5 ? 5000 : 10000
   const tintStrength = phase === 'start' ? 0.015 : 0.04
   const shellStyle = {
     '--accent-h': targetColor.h,
@@ -65,6 +66,7 @@ function App() {
                 onGuessChange={setGuessValue}
                 onComplete={submitGuess}
                 roundId={roundId}
+                durationMs={matchDurationMs}
               />
             )}
 
@@ -81,7 +83,7 @@ function App() {
         </section>
 
         <footer className="footer-credit">
-          <span>Created By </span>
+          <span>Created with ‪‪❤︎‬ By </span>
           <a
             className="creator-link"
             href="https://instagram.com/whyrajan"
