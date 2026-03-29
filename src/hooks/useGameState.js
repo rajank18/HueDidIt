@@ -91,7 +91,7 @@ export const getScoreGrade = (scoreValue) => {
   if (scoreValue >= 5.6) {
     return {
       label: 'good',
-      emoji: '🖒',
+      emoji: ':)',
       reaction: 'Solid attempt. You are getting warmer.',
       color: '#F59E0B',
     }

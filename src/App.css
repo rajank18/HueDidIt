@@ -53,7 +53,7 @@
   margin: 0;
   font-size: clamp(24px, 3.2vw, 36px);
   letter-spacing: 0.02em;
-  color: gray-700;
+  color: var(--muted);
   line-height: 1;
 }
 
@@ -84,7 +84,7 @@
   margin: 0;
   min-width: 110px;
   text-align: center;
-  font-size: 14px;
+  font-size: clamp(12px, 1.5vw, 14px);
   letter-spacing: 0.05em;
   padding: 8px 14px;
   border-radius: 999px;
@@ -104,7 +104,7 @@
   justify-content: center;
   align-items: center;
   gap: 2px;
-  font-size: 13px;
+  font-size: clamp(11px, 1.4vw, 13px);
   color: var(--muted);
 }
 
@@ -142,7 +142,7 @@
 
 .phase-label {
   margin: 0;
-  font-size: 11px;
+  font-size: clamp(9px, 1.2vw, 11px);
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--muted);
@@ -189,7 +189,7 @@
 
 .start-copy {
   margin: 0;
-  font-size: 15px;
+  font-size: clamp(13px, 1.8vw, 15px);
   line-height: 1.65;
   color: var(--muted);
 }
@@ -198,7 +198,7 @@
   border: none;
   border-radius: 999px;
   padding: 14px 32px;
-  font-size: 16px;
+  font-size: clamp(14px, 2vw, 16px);
   font-weight: 600;
   color: #fff;
   background: linear-gradient(
@@ -251,14 +251,14 @@
 }
 
 .slider-label {
-  font-size: 11px;
+  font-size: clamp(9px, 1.1vw, 11px);
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--muted);
 }
 
 .slider-value {
-  font-size: 15px;
+  font-size: clamp(13px, 1.8vw, 15px);
   font-weight: 600;
   font-variant-numeric: tabular-nums;
 }
@@ -324,7 +324,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 20px;
+  font-size: clamp(18px, 2.3vw, 20px);
   font-weight: 600;
   font-style: italic;
 }
@@ -332,7 +332,7 @@
 .grade-reaction {
   margin: 6px 0 18px;
   color: var(--muted);
-  font-size: 15px;
+  font-size: clamp(13px, 1.8vw, 15px);
   line-height: 1.6;
   
 }
@@ -346,7 +346,7 @@
 
 .comparison-headings p {
   margin: 0;
-  font-size: 11px;
+  font-size: clamp(9px, 1.1vw, 11px);
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--muted);
@@ -365,7 +365,7 @@
   border-radius: 999px;
   background: var(--surface);
   color: var(--muted);
-  font-size: 13px;
+  font-size: clamp(11px, 1.4vw, 13px);
   letter-spacing: 0.08em;
   text-align: center;
   padding: 8px 12px;
@@ -405,7 +405,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 13px;
+  font-size: clamp(11px, 1.4vw, 13px);
   color: var(--muted);
 }
 
@@ -447,7 +447,7 @@
   border: none;
   border-radius: 999px;
   padding: 12px 24px;
-  font-size: 15px;
+  font-size: clamp(13px, 1.8vw, 15px);
   font-weight: 600;
   color: #ffffff;
   background: linear-gradient(
@@ -472,20 +472,99 @@
 @media (max-width: 760px) {
   .game-shell {
     width: min(480px, calc(100% - 40px));
-    padding: 20px;
-    gap: 20px;
+    padding: 16px;
+    gap: 14px;
+  }
+
+  .phase-panel {
+    gap: 12px;
+  }
+
+  .phase-header {
+    gap: 6px;
+  }
+
+  .timer-chip {
+    font-size: clamp(18px, 5vw, 22px);
+    padding: 8px 12px;
+  }
+
+  .wordmark {
+    font-size: clamp(20px, 8vw, 30px);
+  }
+
+  .game-counter {
+    font-size: clamp(11px, 3.5vw, 12px);
+    min-width: 92px;
+    padding: 7px 10px;
+  }
+
+  .footer-credit {
+    font-size: clamp(10px, 3.3vw, 12px);
   }
 
   .start-card {
     padding: 28px;
   }
 
+  .start-copy {
+    font-size: clamp(12px, 3.8vw, 14px);
+  }
+
+  .start-button {
+    font-size: clamp(13px, 4vw, 15px);
+  }
+
   .match-grid {
     grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .slider-stack {
+    gap: 10px;
+  }
+
+  .slider-card {
+    padding: 12px;
+    border-radius: 18px;
+  }
+
+  .slider-label {
+    font-size: clamp(8px, 2.6vw, 10px);
+  }
+
+  .slider-value {
+    font-size: clamp(12px, 3.6vw, 14px);
+  }
+
+  .slider-meta {
+    margin-bottom: 8px;
+  }
+
+  .color-square {
+    width: min(100%, 250px);
+    border-radius: 20px;
   }
 
   .score-card {
     padding: 20px;
+  }
+
+  .grade-line {
+    font-size: clamp(16px, 5vw, 18px);
+  }
+
+  .grade-reaction {
+    font-size: clamp(12px, 3.6vw, 14px);
+  }
+
+  .hex-pill,
+  .breakdown-meta {
+    font-size: clamp(10px, 3.2vw, 12px);
+  }
+
+  .play-again-btn {
+    font-size: clamp(12px, 3.8vw, 14px);
   }
 
   .score-footer {
