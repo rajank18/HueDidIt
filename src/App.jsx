@@ -22,7 +22,7 @@ function App() {
   } = useGameState()
 
   const gameNumber = Math.max(1, roundId)
-  const matchDurationMs = gameNumber > 5 ? 5000 : 10000
+  const matchDurationMs = gameNumber > 5 ? 7000 : 10000
   const tintStrength = phase === 'start' ? 0.015 : 0.04
   const shellStyle = {
     '--accent-h': targetColor.h,
