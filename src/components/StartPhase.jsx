@@ -16,7 +16,7 @@ function StartPhase({ onStart }) {
         transition={{ duration: 0.42, ease: [0.22, 1, 0.36, 1] }}
       >
         <p className="phase-label">READY?</p>
-        <h1 className="start-title">A tiny color ritual</h1>
+        <h2 className="start-title">A tiny color ritual</h2>
         <p className="start-copy">
           Memorize the color. Recreate it. Simple... maybe.
         </p>

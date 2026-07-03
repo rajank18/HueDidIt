@@ -38,13 +38,15 @@ function App() {
     >
       <div className="game-shell">
         <header className="top-bar">
-          <button
-            type="button"
-            className="wordmark story-script-regular wordmark-button"
-            onClick={goToStart}
-          >
-            HUE DID IT
-          </button>
+          <h1 style={{ margin: 0, padding: 0, fontSize: 'inherit', fontWeight: 'inherit', lineHeight: 'inherit' }}>
+            <button
+              type="button"
+              className="wordmark story-script-regular wordmark-button"
+              onClick={goToStart}
+            >
+              HUE DID IT
+            </button>
+          </h1>
           <p className="game-counter">Game #{gameNumber}</p>
         </header>
 

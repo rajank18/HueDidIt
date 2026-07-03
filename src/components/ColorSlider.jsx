@@ -32,6 +32,7 @@ function ColorSlider({
         onChange={(event) => onChange(Number(event.target.value))}
         className="zen-range"
         style={{ background: gradient }}
+        aria-label={`${label} slider for color matching game`}
       />
     </motion.div>
   )
