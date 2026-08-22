@@ -5,12 +5,11 @@ const clamp = (value, min, max) => Math.min(max, Math.max(min, value))
 const formatTimer = (remainingMs) => {
   const total = Math.max(0, remainingMs)
   const seconds = Math.floor(total / 1000)
-  const fraction = total % 1000
-  const first = Math.floor(fraction / 10)
-  const second = Math.floor((fraction % 10) * 10)
-
-  return `${seconds}.${String(first).padStart(2, '0')}.${String(second).padStart(2, '0')} sec`
+  const fraction = Math.floor((total % 1000) / 10) // Extracts a clean 2-digit MS (00-99)
+  
+  return `${seconds}.${String(fraction).padStart(2, '0')} sec`
 }
+
 
 function CountdownText({ durationMs, onComplete, resetKey, className = '' }) {
   const [remainingMs, setRemainingMs] = useState(durationMs)
