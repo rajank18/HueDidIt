@@ -88,7 +88,7 @@ function App() {
           <span>Created with ‪‪❤︎‬ By </span>
           <a
             className="creator-link"
-            href="https://instagram.com/whyrajan"
+            href="https://github.com/rajank18"
             target="_blank"
             rel="noreferrer"
           >
